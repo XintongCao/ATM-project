@@ -7,7 +7,7 @@ class Views():
         time.sleep(1)
         self.showfunc()
 
-    #显示 欢迎界面
+    #Show Welcome screen
     def __showindex(self):
         varstr='''
 ************************************************
@@ -20,7 +20,7 @@ class Views():
 '''
         print(varstr)
 
-    #显示 操作界面
+    #Show Operation interface
     def showfunc(self):
         varstr='''
 ************************************************
