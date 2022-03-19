@@ -3,15 +3,15 @@ from Packages.viewClass import Views
 from Packages.controllerClass import Controller
 class Main():
     def __init__(self):
-        #实例化视图对象
+        #Instantiating the view-object
         view=Views()
-        #实例化操作控制类
+        #Instantiating the operational control class
         obj=Controller()
 
         while True:
-            #让用户选择操作选项
+            #Allowing the user to select operational options
             num=input('Please select a function: ')
-            #需要验证用户的输入是否正确
+            #verify if user's input is correct
             code=['1','2','3','4','5','6','7','8','9','0']
             if num not in code:
                 time.sleep(1)
@@ -23,9 +23,9 @@ class Main():
 *********************************************
 ''')
                 view.showfunc()
-                #跳过本次循环
+                #Skip this loop
                 continue
-            #以下是使用流程控制。也可以改成其他形式，例如，字典
+            #Process control
             if num=='1':
                 obj.registration()
             elif num=='2':
