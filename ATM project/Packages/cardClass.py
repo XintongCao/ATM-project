@@ -1,7 +1,7 @@
 class Card():
-    #卡号，密码，余额，是否锁卡
+    #Card number, PIN, balance and whether the card is locked
     def __init__(self,cardid,pwd,balance,islock=False):
-        self.cardid=cardid  #卡号
-        self.pwd=pwd  #密码
-        self.balance=balance  #余额
-        self.islock=islock #false是未锁卡，true为锁卡状态
+        self.cardid=cardid  #card number
+        self.pwd=pwd  #PIN
+        self.balance=balance  #balance
+        self.islock=islock #'false' is unlocked，'true' is locked.
